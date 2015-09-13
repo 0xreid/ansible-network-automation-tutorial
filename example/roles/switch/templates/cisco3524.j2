@@ -1,0 +1,105 @@
+hostname switch01.sanfrancisco
+
+no feature telnet
+feature scp-server
+feature port-security
+feature interface-vlan
+feature lldp
+
+username admin password 5 $passwordhash role network-admin
+no password strength-check
+ip domain-lookup
+ip domain-name test.me
+ip access-list SNMP_MANAGERS
+  10 permit ip xx.xx.xx.xx/xx any
+  20 deny ip any any log
+ip access-list SSH
+  statistics per-entry
+  10 permit ip xx.xx.xx.xx/xx any
+  20 permit ip xx.xx.xx.xx/xx any
+  30 permit ip xx.xx.xx.xx/xx any
+  40 permit ip xx.xx.xx.xx/xx any
+snmp-server contact me@test.me
+snmp-server location San Francisco, CA
+ntp server 69.36.224.15 use-vrf management
+
+vlan 1
+vlan 3
+  name SANFRANCISCO01-PEERING
+no cdp enable
+vrf context management
+  ip name-server 8.8.8.8
+  ip route 0.0.0.0/0 xx.xx.xx.xx
+
+
+interface Vlan1
+
+interface Vlan3
+  no shutdown
+  no autostate
+  ip address xx.xx.xx.xx/xx
+
+interface Ethernet1/1
+  speed auto
+  no lldp transmit
+  description ASabcdef - Some Company
+  switchport access vlan 3
+  no cdp enable
+  spanning-tree port type edge
+  spanning-tree bpduguard enable
+  spanning-tree guard root
+  spanning-tree bpdufilter enable
+  storm-control broadcast level 5.00
+  storm-control multicast level 1.00
+  switchport port-security violation protect
+  switchport port-security mac-address 4C5E.0C6A.82A1
+  no shutdown
+
+interface Ethernet1/2
+  speed auto
+  no lldp transmit
+  description ASxyzabc - Another Company
+  switchport access vlan 3
+  no cdp enable
+  spanning-tree port type edge
+  spanning-tree bpduguard enable
+  spanning-tree guard root
+  spanning-tree bpdufilter enable
+  storm-control broadcast level 5.00
+  storm-control multicast level 1.00
+  switchport port-security violation protect
+  switchport port-security mac-address 0024.C4CB.BFC3
+  no shutdown
+
+interface Ethernet1/3
+  speed auto
+  no lldp transmit
+  description ASdefgh - Org 2.0
+  switchport access vlan 3
+  no cdp enable
+  spanning-tree port type edge
+  spanning-tree bpduguard enable
+  spanning-tree guard root
+  spanning-tree bpdufilter enable
+  storm-control broadcast level 5.00
+  storm-control multicast level 1.00
+  switchport port-security violation protect
+  switchport port-security mac-address 001B.2156.6C35
+  no shutdown
+
+interface Ethernet1/48
+  no lldp transmit
+  description Transport
+  switchport access vlan 3
+  no cdp enable
+  no shutdown
+
+interface mgmt0
+  vrf member management
+  ip address xx.xx.xx.xx/xx
+line console
+line vty
+  access-class SSH in
+logging logfile messages 6 size 16384
+no logging monitor
+no logging console

@@ -1,2 +1,2 @@
-ansible==1.9
-netaddr
+ansible>=1.9
+netaddr>=0.7.18
