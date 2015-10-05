@@ -16,22 +16,18 @@ Within your host OS, ```Python 2.7.10``` or greater must be installed (the Pytho
 * [Windows & Ansible - PROCEED WITH CAUTION](https://servercheck.in/blog/running-ansible-within-windows)
 
 ## Installation
-* Checkout this git repo
-```git clone https://github.com/bronwynlewis/nanog65-automation-tutorial.git```
-* _OR_ download an archive
-```wget https://codeload.github.com/bronwynlewis/nanog65-automation-tutorial/archive/master.zip```
+Follow the [VirtualBox and Ubuntu VM installation instructions ](/VMinstall/README.md)  which include screenshots and descriptions for the required steps.
 
-Prereq: python 2.7.10 and pip 1.5
-
-To install ```ansible```, its dependencies, and the ```netaddr``` package (required to use the ```ipaddr()``` Jinja2 text filter for IP address calculation), run:
-
-```sudo pip install -r requirements.txt```
+If you have an existing Linux environment that you're comfortable managing, the main steps are:
+```
+wget -O tutorial.tgz https://github.com/bronwynlewis/nanog65-automation-tutorial/archive/master.tar.gz
+tar xzf tutorial.tgz
+cd nanog65-automation-tutorial-master
+sudo apt-get install python-pip python-dev
+sudo pip install -r requirements.txt
+```
 
 ##Directories
-
-###VMinstall
-
-This directory has a screenshot walkthrough of creating a VirtualBox VM, along with a basic README with links to VirtualBox and Ubuntu for creating a VM for this tutorial. (optional, but recommend)
 
 ###workspace
 
