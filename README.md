@@ -6,9 +6,9 @@ This repository holds materials for a [Ansible network automation tutorial](http
 * [Matt Peterson](mailto:matt@peterson.org) - [@dorkmatt](https://twitter.com/dorkmatt)
 
 ## Prerequisites
-For environment simplicity, we highly assume a stock Ubuntu LTS 14.04.3 server installation. It is highly encouraged to run such a Linux host within a virtualization setup, such as VirtualBox or. VMware ESX/Fusion. It is possible to run [Ansible](http://www.ansible.com/) under other Linux distributions or even other operating systems, such as Mac OSX or FreeBSD. The on-screen tutorial will be given from Mac OSX, but the Ansible commands remain the same.
+For environment simplicity, we highly assume a stock Ubuntu LTS 14.04.3 server installation. It is highly encouraged to run such a Linux host within a virtualization setup, such as VirtualBox or VMware ESX/Fusion. It is possible to run [Ansible](http://www.ansible.com/) under other Linux distributions or even other operating systems, such as Mac OSX or FreeBSD. The on-screen tutorial will be given from Mac OSX, but the Ansible commands remain the same.
 
-Within your host OS, ```Python 2.7.10``` or greater must be installed (the Python 3.x releases are untested) along with the ```pip``` (the Python packager management tool). Instructions on how to install the correct version of python and pip, as well as running Ansible on Windows, please see the following links:
+Within your host OS, ```Python 2.7.10``` or greater must be installed (the Python 3.x releases are untested) along with ```pip``` (the Python packager management tool). For instructions on how to install the correct version of python and pip, as well as running Ansible on Windows, please see the following links:
 
 * [Python on Linux](http://docs.python-guide.org/en/latest/starting/install/linux/)
 * [Python on Mac OSX](http://docs.python-guide.org/en/latest/starting/install/osx/)
