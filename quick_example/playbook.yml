@@ -1,0 +1,10 @@
+---
+
+- name: Hello world
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  roles:
+    - hello
+
