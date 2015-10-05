@@ -112,7 +112,7 @@ http://www.ubuntu.com/download/server
 wget -O tutorial.tgz https://github.com/bronwynlewis/nanog65-automation-tutorial/archive/master.tar.gz
 tar xzf tutorial.tgz
 cd nanog65-automation-tutorial-master
-sudo apt-get install python-pip
+sudo apt-get install python-pip python-dev
 sudo pip install -r requirements.txt
 ```
 
