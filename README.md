@@ -5,9 +5,9 @@ These installation instructions assume you are running at least ```python 2.7.10
 
 Instructions on how to install the correct version of python and pip, as well as running Ansible on Windows, please see the following links:
 
-[Python on Linux](http://docs.python-guide.org/en/latest/starting/install/linux/)
-[Python on Mac OSX](http://docs.python-guide.org/en/latest/starting/install/osx/)
-[Installing PIP](https://pip.pypa.io/en/latest/installing.html)
+* [Python on Linux](http://docs.python-guide.org/en/latest/starting/install/linux/)
+* [Python on Mac OSX](http://docs.python-guide.org/en/latest/starting/install/osx/)
+* [Installing PIP](https://pip.pypa.io/en/latest/installing.html)
 
 [Windows & Ansible - PROCEED WITH CAUTION](https://servercheck.in/blog/running-ansible-within-windows)
 
