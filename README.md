@@ -19,7 +19,7 @@ Within your host OS, ```Python 2.7.10``` or greater must be installed (the Pytho
 * Checkout this git repo
 ```git clone https://github.com/bronwynlewis/nanog65-automation-tutorial.git```
 * _OR_ download an archive
-```wget https://github.com/bronwynlewis/nanog65-automation-tutorial/archive/master.zip```
+```wget https://codeload.github.com/bronwynlewis/nanog65-automation-tutorial/archive/master.zip```
 
 Prereq: python 2.7.10 and pip 1.5
 
