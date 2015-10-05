@@ -3,12 +3,9 @@ hostname NAME
 interface gi0/0
  description DESCRIPTION
  ip address IPADDRESS NETMASK
- no cdp enable
  ipv6 address IPV6
  no shutdown
-exit
+ exit
 !
-ip default-gateway GATEWAY
-ip classless
 ip route 0.0.0.0 0.0.0.0 GATEWAY 254
 
