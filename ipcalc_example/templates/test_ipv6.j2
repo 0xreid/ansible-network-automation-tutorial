@@ -1,0 +1,5 @@
+iface eth0 inet static
+    address   {{ item.ipv6 | ipv6('host/prefix') }}
+    address   {{ item.ipv6 | ipaddr('host/prefix') }}
+
+    address   {{ item.ipv6 | ipv4('host/prefix') }}

@@ -1,0 +1,13 @@
+iface eth0 inet static
+    address   {{ item.ipv4 | ipaddr('address') }}
+    network   {{ item.ipv4 | ipaddr('network') }}
+    netmask   {{ item.ipv4 | ipaddr('netmask') }}
+    broadcast {{ item.ipv4 | ipaddr('broadcast') }}
+
+
+iface eth0 inet static
+    address   {{ item.ipv4 | ipv4('address') }}
+    network   {{ item.ipv4 | ipv4('network') }}
+    netmask   {{ item.ipv4 | ipv4('netmask') }}
+    broadcast {{ item.ipv4 | ipv4('broadcast') }}
+

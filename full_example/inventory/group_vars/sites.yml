@@ -1,0 +1,5 @@
+---
+
+sites:
+  - { hostname: , ipv4: , ipv6:  }
+
