@@ -21,11 +21,10 @@ routing-options {
 }
 
 # DHCP
-
-set system services dhcp pool NETWORK/CIDER address-range low FIRSTDHCP
-set system services dhcp pool NETWORK/CIDER address-range high LASTDHCP
-set system services dhcp pool NETWORK/CIDER router GATEWAY
-set system services dhcp pool NETWORK/CIDER domain-name DOMAIN
-set system services dhcp pool NETWORK/CIDER name-server DHCPSERVER
+set system services dhcp pool NETWORK/CIDR address-range low FIRSTDHCP
+set system services dhcp pool NETWORK/CIDR address-range high LASTDHCP
+set system services dhcp pool NETWORK/CIDR router GATEWAY
+set system services dhcp pool NETWORK/CIDR domain-name DOMAIN
+set system services dhcp pool NETWORK/CIDR name-server DHCPSERVER
 
 
