@@ -1,0 +1,20 @@
+hostname NAME
+
+interface gi0/0
+ description DESCRIPTION
+ ip address IPADDRESS NETMASK
+ ipv6 address IPV6
+ no shutdown
+ exit
+!
+ip route 0.0.0.0 0.0.0.0 GATEWAY 254
+
+! DHCP
+service dhcp
+ip dhcp-excluded address GATEWAY GATEWAY+#
+ip dhcp pool NAME
+ network NETWORK NETMASK
+ domain-name DOMAIN
+ default-router GATEWAY
+ dns-server DHCPSERVER
+
