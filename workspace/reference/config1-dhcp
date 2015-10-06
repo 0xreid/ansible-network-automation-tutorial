@@ -1,20 +1,25 @@
-hostname NAME
+hostname {{ item.hostname }}
 
+{# define gateway var as first usable address #}
+{% set gateway = item.ipv4 | ipaddr('1') | ipaddr('address') %}
 interface gi0/0
- description DESCRIPTION
- ip address IPADDRESS NETMASK
- ipv6 address IPV6
+ description {{ item.description }}
+ ip address {{ gateway }} {{ item.ipv4 | ipv4('netmask') }}
+ ipv6 address {{ item.ipv4 | ipv6('host/prefix') }}
  no shutdown
  exit
 !
-ip route 0.0.0.0 0.0.0.0 GATEWAY 254
+ip route 0.0.0.0 0.0.0.0 {{ gateway }} 254
 
+{% if item.ipv4_dhcp is defined %}
 ! DHCP
 service dhcp
-ip dhcp-excluded address GATEWAY GATEWAY+#
-ip dhcp pool NAME
- network NETWORK NETMASK
- domain-name DOMAIN
- default-router GATEWAY
- dns-server DHCPSERVER
+ip dhcp-excluded address {{ gateway }} {{ item.ipv4 | ipaddr('10') | ipaddr('address') }}
+ip dhcp pool {{ item.hostname | upper }}
+ network {{ item.ipv4 | ipaddr('network') }} {{ item.ipv4 | ipaddr('netmask') }}
+ domain-name {{ item.domain }}
+ default-router {{ gateway }}
+ dns-server 8.8.8.8
+{% endif %}
+
 

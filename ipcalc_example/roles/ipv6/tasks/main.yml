@@ -1,0 +1,10 @@
+---
+  - name: Verify compiled directory exists
+    file: path=./output/{{ item }}/ state=directory
+    with_items:
+      - ipv6
+
+  - name: Generate ipv4 test
+    template: src=test_ipv6.j2 dest=./output/ipv6/interface.{{ item.hostname }}.cfg
+    with_items:
+      - "{{ ipv6_sites }}"

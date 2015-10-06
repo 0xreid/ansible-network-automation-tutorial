@@ -1,0 +1,8 @@
+---
+
+ipv4_sites:
+  - { hostname: jfk, ipv4: 192.0.2.5/24 }
+  - { hostname: sfo, ipv4: 203.0.113.42/24 }
+
+ipv6_sites:
+  - { hostname: lax, ipv6: "2001:0db8:1000::7/36" }

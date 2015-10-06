@@ -1,31 +1,8 @@
 ---
 - hosts: localhost
   connection: local
-  vars:
-    ipv4_sites:
-      - { hostname: jfk, ipv4: 192.0.2.5/24 }
-      - { hostname: sfo, ipv4: 203.0.113.42/24 }
-    ipv6_sites:
-      - { hostname: lax, ipv6: "2001:0db8:1000::7/36" }
-  tasks:
-  - name: Verify compiled directory exists
-    file: path=./{{ item }}/ state=directory
-    with_items:
-      - ipv4
-      - ipv6
 
-  - name: Generate ipv4 test
-    template: src=./templates/test_ipv4.j2 dest=./ipv4/interface.{{ item.hostname }}.cfg
-    with_items:
-      - "{{ ipv4_sites }}"
+  roles:
+    - ipv4
+    - ipv6
 
-  - name: Generate ipv4-more test
-    template: src=./templates/test_ipv4-more.j2 dest=./ipv4/more-{{ item.hostname }}.cfg
-    with_items:
-      - "{{ ipv4_sites }}"
-
-
-  - name: Generate ipv6 test
-    template: src=./templates/test_ipv6.j2 dest=./ipv6/interface.{{ item.hostname }}.cfg
-    with_items:
-      - "{{ ipv6_sites }}"
