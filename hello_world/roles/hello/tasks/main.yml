@@ -1,7 +1,10 @@
 ---
 
+  - name: Verify compiled directory exists
+    file: path=./output/ state=directory
+
   - name: Generate "hello"
-    template: src=hello.j2 dest=./hello-{{ item.number }}.txt
+    template: src=hello.j2 dest=./output/hello-{{ item.number }}.txt
     with_items:
       - "{{ info }}"
 
