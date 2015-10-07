@@ -1,0 +1,11 @@
+hostname {{ item.hostname }}
+
+interface gi0/0
+ description {{ item.int_description | upper }}
+ ip address {{ item.ipv4 | ipaddr('1') | ipaddr('address') }} {{ item.ipv4 | ipv4('netmask') }}
+ ipv6 address {{ item.ipv6 | ipaddr('1') | ipaddr('host/prefix') }}
+ no shutdown
+ exit
+!
+ip route 0.0.0.0 0.0.0.0 {{ item.ipv4 | ipaddr('1') | ipaddr('address') }} 254
+

@@ -6,7 +6,7 @@ interfaces {
         unit 0 {
             description "DESCRIPTION";
             family inet {
-                address IPADDRESS/CIDRNETMASK;
+                address IPADDRESS/CIDR;
             }
             family inet6 {
                 address IPV6;

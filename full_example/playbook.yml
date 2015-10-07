@@ -1,0 +1,10 @@
+---
+
+- name: Generate config files
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  roles:
+    - router
+

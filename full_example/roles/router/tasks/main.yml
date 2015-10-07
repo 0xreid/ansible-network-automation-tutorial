@@ -1,0 +1,12 @@
+---
+
+- name: Verify compiled directory exists
+  file: path=./configs/{{ item }}/ state=directory
+  with_items:
+    - basic
+
+- name: Generate basic configs
+  template: src=config1.j2 dest=./configs/basic/basic.{{ item.hostname }}.cfg
+  with_items:
+    - "{{ basic_sites }}"
+
