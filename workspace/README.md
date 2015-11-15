@@ -23,11 +23,11 @@ Use it to test a variable (presence, content, etc.).
 
 ```
 {% if nanog.montreal %}
-    Poutine!
-{% elif nanog.sanantonio %}
-    BBQ!
+    Welcome to NANOG65!
+{% elif ripe.bucharest %}
+    Welcome to RIPE71!
 {% else %}
-    I'm not sure what to have.
+    I'm not sure where I am right now...
 {% endif %}
 ```
 
@@ -35,7 +35,8 @@ Use it to test a variable (presence, content, etc.).
 Loop over each item in a sequence.
 
 ```
-{% for x in nanog-past %}
+{% for x in past-conferences %}
+Name: {{ x.conf }}
 Where: {{ x.city }}, {{ x.country }}
 When: {{ x.date }}
 # of Attendees: {{ x.attendees }}
