@@ -2,5 +2,4 @@
 
 info:
   - { name: world, number: 1 }
-  - { name: NANOG, number: 2 }
-  - { name: "Matt & Bronwyn", number: 3 }
+  - { name: RIPE71, number: 2 }
