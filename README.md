@@ -13,7 +13,7 @@ Within your host OS, ```Python 2.7.10``` or greater must be installed (the Pytho
 * [Python on Linux](http://docs.python-guide.org/en/latest/starting/install/linux/)
 * [Python on Mac OSX](http://docs.python-guide.org/en/latest/starting/install/osx/)
 * [Installing PIP](https://pip.pypa.io/en/latest/installing.html)
-* [Windows & Ansible - PROCEED WITH CAUTION](https://servercheck.in/blog/running-ansible-within-windows)
+* [Windows 10 & Ansible](https://www.jeffgeerling.com/blog/2017/using-ansible-through-windows-10s-subsystem-linux) or [Windows w/ Cygwin & Ansible](https://www.jeffgeerling.com/blog/running-ansible-within-windows)
 
 ## Installation
 Follow the [VirtualBox and Ubuntu VM installation instructions ](/VMinstall/README.md)  which include screenshots and descriptions for the required steps.
