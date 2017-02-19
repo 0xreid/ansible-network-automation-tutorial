@@ -35,7 +35,7 @@ This directory is meant to be used as a workspace to follow along with the hands
 
 ### full_example
 
-This directory contains a more complete finished example of the tutorial for reference. (WIP)
+This directory contains a more complete finished example of the tutorial for reference.
 
 ### hello_world
 
