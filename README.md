@@ -1,5 +1,5 @@
 # Ansible Network Automation Tutorial
-This repository holds materials for an Ansible network automation tutorial presented at [NANOG65](https://www.nanog.org/meetings/abstract?id=2678), RIPE71, and APRICOT2017. The assumed audience for this tutorial are IP network engineers with no or minimal programming or 'DevOps' experience. The tutorial was first presented at [NANOG65](https://www.nanog.org/meetings/nanog65/home) on October 6th, 2015 in Montreal, Québec, Canada.
+This repository holds materials for an Ansible network automation tutorial presented at [NANOG65](https://www.nanog.org/meetings/abstract?id=2678), RIPE71, and [APRICOT2017](https://2017.apricot.net/program/schedule/#/day/9/network-automation-ansible-101). The assumed audience for this tutorial are IP network engineers with no or minimal programming or 'DevOps' experience. The tutorial was first presented at [NANOG65](https://www.nanog.org/meetings/nanog65/home) on October 6th, 2015 in Montreal, Québec, Canada.
 
 ### Authors
 * [Bronwyn Lewis](http://bronwynlewis.com/) - [@bronwyn](https://twitter.com/bronwyn)
