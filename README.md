@@ -27,16 +27,20 @@ sudo apt-get install python-pip python-dev
 sudo pip install -r requirements.txt
 ```
 
-##Directories
+## Directories
 
-###workspace
+### workspace
 
 This directory is meant to be used as a workspace to follow along with the hands-on tutorial portion of the talk. You'll be creating directories and files from scratch, as well as moving and editing existing reference files.
 
-###main_example
+### full_example
 
 This directory contains a more complete finished example of the tutorial for reference. (WIP)
 
-###ipcalc_example
+### hello_world
+
+Basic role to learn to generate files and print "Hello world" to a text file.
+
+### ipcalc_example
 
 This directory contains some basic examples of the ```ipaddr()``` filter in action - both IPv4 and IPv6.
