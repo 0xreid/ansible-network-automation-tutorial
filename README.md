@@ -6,7 +6,7 @@ This repository holds materials for an Ansible network automation tutorial prese
 * [Matt Peterson](mailto:matt@peterson.org) - [@dorkmatt](https://twitter.com/dorkmatt)
 
 ## Prerequisites
-For environment simplicity, we assume a stock Ubuntu LTS 14.04.3 server installation. It is highly encouraged to run a Linux host within a virtualization setup, such as VirtualBox, VMware Fusion, or other virtualization platforms. It is possible to run [Ansible](http://www.ansible.com/) under other Linux distributions or even other operating systems, such as Mac OSX, FreeBSD, and Windows 10.
+For environment simplicity, we assume a stock Ubuntu LTS server installation. It is highly encouraged to run a Linux host within a virtualization setup, such as VirtualBox, VMware Fusion, or other virtualization platforms. It is possible to run [Ansible](http://www.ansible.com/) under other Linux distributions or even other operating systems, such as Mac OSX, FreeBSD, and Windows 10.
 
 Within your host OS, ```Python 2.7.10``` or greater must be installed (the Python 3.x releases are untested) along with ```pip``` (the Python packager management tool). For instructions on how to install the correct version of python and pip, as well as running Ansible on Windows, please see the following links:
 
@@ -16,7 +16,7 @@ Within your host OS, ```Python 2.7.10``` or greater must be installed (the Pytho
 * [Windows 10 & Ansible](https://www.jeffgeerling.com/blog/2017/using-ansible-through-windows-10s-subsystem-linux) or [Windows w/ Cygwin & Ansible](https://www.jeffgeerling.com/blog/running-ansible-within-windows)
 
 ## Installation
-Follow the [VirtualBox and Ubuntu VM installation instructions ](/VMinstall/README.md)  which include screenshots and descriptions for the required steps.
+Follow the [VirtualBox and Ubuntu VM installation instructions ](/VMinstall/README.md) which include screenshots and descriptions for the required steps (note: the screenshots show an older Ubuntu release and slightly different git repo name, however the general directions still apply).
 
 If you have an existing Linux environment that you're comfortable managing, the main steps are:
 ```
@@ -44,6 +44,10 @@ This directory contains a more complete finished example of the tutorial for ref
 ### ipcalc_example
 
 This directory contains some basic examples of the ```ipaddr()``` filter in action - both IPv4 and IPv6.
+
+### advanced_examples
+
+This directory contains a bit more complicated examples, geared as an Ansible 102 tutorial.
 
 ### presentation
 
