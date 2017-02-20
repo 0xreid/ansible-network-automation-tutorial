@@ -1,0 +1,10 @@
+---
+
+- name: Add users
+  user: name={{ item.username }} password={{ item.password }} state=present
+  with_items: '{{ active_users }}'
+
+- name: Remove users
+  user: name={{ item.username }} state=absent
+  with_items: '{{ inactive_users }}'
+
