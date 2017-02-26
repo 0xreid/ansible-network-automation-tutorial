@@ -4,7 +4,7 @@
     with_items:
       - ipv6
 
-  - name: Generate ipv4 test
+  - name: Generate ipv6 test
     template: src=test_ipv6.j2 dest=./output/ipv6/interface.{{ item.hostname }}.cfg
     with_items:
       - "{{ ipv6_sites }}"
