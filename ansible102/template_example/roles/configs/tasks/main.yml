@@ -1,0 +1,11 @@
+---
+
+  - name: Verify compiled directory exists
+    file: path=./output/ state=directory
+
+  - name: Generate configs
+    template: src=template1.j2 dest=./output/template1.txt
+
+  - name: Generate configs
+    template: src=template2.j2 dest=./output/template2.txt
+

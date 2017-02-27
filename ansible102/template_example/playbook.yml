@@ -1,0 +1,10 @@
+---
+
+- name: Manage users
+  gather_facts: yes
+  become: yes
+  hosts: local
+
+  roles:
+    - configs
+
