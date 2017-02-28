@@ -2,10 +2,10 @@ hostname NAME
 
 interface gi0/0
  description DESCRIPTION
- ip address IPADDRESS NETMASK
+ ip address IPV4 NETMASK_IPV4
  ipv6 address IPV6
  no shutdown
  exit
 !
-ip route 0.0.0.0 0.0.0.0 GATEWAY 254
-
+ip route 0.0.0.0 0.0.0.0 GATEWAY_V4 254
+ipv6 route ::/0 GATEWAY_V6
