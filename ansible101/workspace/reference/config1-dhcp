@@ -5,11 +5,12 @@ hostname {{ item.hostname }}
 interface gi0/0
  description {{ item.description }}
  ip address {{ gateway }} {{ item.ipv4 | ipv4('netmask') }}
- ipv6 address {{ item.ipv4 | ipv6('host/prefix') }}
+ ipv6 address {{ item.ipv6 | ipv6('host/prefix') }}
  no shutdown
  exit
 !
 ip route 0.0.0.0 0.0.0.0 {{ gateway }} 254
+ipv6 route ::/0 GATEWAY_V6
 
 {% if item.ipv4_dhcp is defined %}
 ! DHCP
