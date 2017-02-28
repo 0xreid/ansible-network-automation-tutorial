@@ -52,7 +52,7 @@ This directory contains some basic examples of the ```ipaddr()``` filter in acti
 
 ### ansible102
 
-This directory contains a bit more complicated examples, geared as an Ansible 102 tutorial.
+This directory contains more complex examples, geared as an Ansible 102 tutorial.
 
 ### presentation
 
