@@ -6,7 +6,7 @@ interfaces {
         unit 0 {
             description "DESCRIPTION";
             family inet {
-                address IPADDRESS/CIDR;
+                address IPV4/CIDRNETMASK;
             }
             family inet6 {
                 address IPV6;
@@ -16,7 +16,12 @@ interfaces {
 }
 routing-options {
     static {
-        route 0.0.0.0/0 next-hop GATEWAY;
+        route 0.0.0.0/0 next-hop GATEWAY_V4;
+    }
+    rib inet6.0 {
+        static {
+            route ::/0 next-hop GATEWAY_V6;
+        }
     }
 }
 
