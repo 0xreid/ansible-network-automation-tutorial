@@ -2,7 +2,7 @@
 This repository holds materials for an Ansible network automation tutorial presented at [NANOG65](https://www.nanog.org/meetings/abstract?id=2678), [RIPE71](https://ripe71.ripe.net/programme/meeting-plan/tutorials/#mon1), and [APRICOT2017](https://2017.apricot.net/program/schedule/#/day/9/network-automation-ansible-101). The assumed audience for this tutorial are IP network engineers with no or minimal programming or 'DevOps' experience. The tutorial was first presented at [NANOG65](https://www.nanog.org/meetings/nanog65/home) on October 6th, 2015 in Montreal, Québec, Canada.
 
 ### Authors
-* [Bronwyn Lewis](http://bronwynlewis.com/) - [@bronwyn](https://twitter.com/bronwyn)
+* [B. Reid Lewis](http://reidlewis.org/) - [@0xreid](https://twitter.com/0xreid)
 * [Matt Peterson](mailto:matt@peterson.org) - [@dorkmatt](https://twitter.com/dorkmatt)
 
 ## Prerequisites
@@ -20,7 +20,7 @@ Follow the [VirtualBox and Ubuntu VM installation instructions ](/VMinstall/READ
 
 If you have an existing Linux environment that you're comfortable managing, the main steps are:
 ```
-wget -O tutorial.tgz https://github.com/bronwynlewis/ansible-network-automation-tutorial/archive/master.tar.gz
+wget -O tutorial.tgz https://github.com/0xreid/ansible-network-automation-tutorial/archive/master.tar.gz
 tar xzf tutorial.tgz
 cd ansible-network-automation-tutorial-master
 sudo apt-get install python-pip python-dev

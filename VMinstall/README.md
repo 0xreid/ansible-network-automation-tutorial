@@ -19,7 +19,7 @@ http://www.ubuntu.com/download/server
 #### Launch VirtualBox, create a new VM by selecting the blue 'New' icon. Select the 'Linux' OS type and 'Ubuntu (64-bit)' Version.
 ![VirtualBox3](/VMinstall/virtualbox3.png?raw=true)
 
-### Select at least '768' megabytes of allocated memory or RAM 
+### Select at least '768' megabytes of allocated memory or RAM
 ![VirtualBox4](/VMinstall/virtualbox4.png?raw=true)
 
 ### The default '8' gigabytes of disk space is sufficient
@@ -46,7 +46,7 @@ http://www.ubuntu.com/download/server
 ### Select a language, again we assume English - press enter for this default selection
 ![VirtualBox12](/VMinstall/virtualbox12.png?raw=true)
 
-### Select a location, the default is 'United States' - press enter for this default selection. The default 
+### Select a location, the default is 'United States' - press enter for this default selection. The default
 ![VirtualBox13](/VMinstall/virtualbox13.png?raw=true)
 
 ### No keyboard detection is required, the default 'No'
@@ -109,11 +109,9 @@ http://www.ubuntu.com/download/server
 ### Download the archive for this tutorial with the following commands.
 ![VirtualBox33](/VMinstall/virtualbox33.png?raw=true)
 ```
-wget -O tutorial.tgz https://github.com/bronwynlewis/nanog65-automation-tutorial/archive/master.tar.gz
+wget -O tutorial.tgz https://github.com/0xreid/ansible-network-automation-tutorial/archive/master.tar.gz
 tar xzf tutorial.tgz
 cd nanog65-automation-tutorial-master
 sudo apt-get install python-pip python-dev
 sudo pip install -r requirements.txt
 ```
-
-
